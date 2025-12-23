@@ -10,17 +10,26 @@ const checkNum = number => {
 
   const regEx = /^(1\s?)?(\(\d{3}\)|\d{3})[\s\-]?\d{3}[\s\-]?\d{4}$/;
 
-  resultsDiv.textContent = regEx.test(number) ?
-  `Valid US number: ${number}` :
-  `Invalid US number: ${number}`
+  resultsDiv.innerHTML += regEx.test(number) ?
+  `<p class="correct-number">Valid US number: ${number}</p>` :
+  `<p class="wrong-number">Invalid US number: ${number}</p>`
 }
 
-checkBtn.addEventListener('click', () => {
+checkBtn.addEventListener('click', (event) => {
   event.preventDefault();
   checkNum(userInput.value);
+  userInput.value = '';
 });
 
-clearBtn.addEventListener('click', () => {
+clearBtn.addEventListener('click', (event) => {
   event.preventDefault();
   resultsDiv.textContent = '';
 });
+
+userInput.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    checkNum(userInput.value);
+    userInput.value = '';
+  }
+})

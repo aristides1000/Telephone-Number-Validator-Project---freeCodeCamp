@@ -46,12 +46,15 @@ h1 {
 }
 
 .screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   background-color: #DFDFE2;
   padding: 0.5rem 0.75rem;
 }
 
-p {
+label {
   font-family: "Open Sans", sans-serif;
   font-size: 0.95rem;
   margin-bottom: 0.75rem;
@@ -64,7 +67,12 @@ input {
 }
 
 .results-div {
+  margin-top: 0.5rem;
+  width: 12.5rem;
   height: 17rem;
+  overflow: auto;
+  font-size: 1.1rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 .buttons-section {
@@ -83,4 +91,16 @@ button {
   border-style: solid;
   border-width: 3px;
   border-color: white #959089 #959089 white;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+.correct-number {
+  color: #004727;
+}
+
+.wrong-number {
+  color: #533F0A;
 }
