@@ -15,12 +15,12 @@ const checkNum = number => {
   `Invalid US number: ${number}`
 }
 
-checkBtn.addEventListener('click', function () {
+checkBtn.addEventListener('click', () => {
   event.preventDefault();
   checkNum(userInput.value);
 });
 
-clearBtn.addEventListener('click', function() {
+clearBtn.addEventListener('click', () => {
   event.preventDefault();
   resultsDiv.textContent = '';
 });

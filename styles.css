@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3B3B4F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 16.4rem;
+  height: auto;
+  margin: 2.5rem 0 2rem 0;
+}
+
+h1 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.85rem;
+  margin-bottom: 2.75rem;
+}
+
+.cellphone-border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 0.9rem;
+  border-radius: 1rem;
+}
+
+.camera {
+  display: block;
+  background-color: #DFDFE2;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  margin-bottom: 0.9rem;
+}
+
+.screen {
+  text-align: center;
+  background-color: #DFDFE2;
+  padding: 0.5rem 0.75rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+input {
+  padding: 0.8rem;
+  border-radius: 0.75rem;
+  border: 1px solid black;
+}
+
+.results-div {
+  height: 17rem;
+}
+
+.buttons-section {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+button {
+  border-radius: 0;
+  padding: 0.05rem 1.25rem;
+  font-size: 1.15rem;
+  background-image: linear-gradient(to bottom, #FDFDFD, #948F88);
+  border-style: solid;
+  border-width: 3px;
+  border-color: white #959089 #959089 white;
+}
